@@ -67,17 +67,20 @@ Hệ thống quản lý đăng nhập người dùng cung cấp các chức năn
 - Quản trị viên có thể thao tác trực tiếp trên bảng người dùng  
 - Ảnh minh họa giao diện:  
 
-<div align="center" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+<div align="center">
 
-  <div style="text-align: center; width: 30%;">
-    <img src="https://github.com/user-attachments/assets/ff5bdebe-ae2c-4dd6-9a30-a4dcac8db26c" alt="Screenshot đăng ký" width="50%" />
-    <p><i>Giao diện đăng ký</i></p>
-  </div>
-
-  <div style="text-align: center; width: 30%;">
-    <img src="https://github.com/user-attachments/assets/bb211255-4f03-4c02-8fdf-452f7bd302e8" alt="Screenshot đăng nhập" width="50%" />
-    <p><i>Giao diện đăng nhập</i></p>
-  </div>
+<table>
+  <tr>
+    <td align="center">
+      <img width="50%"alt="Screenshot 2025-09-19 055603" src="https://github.com/user-attachments/assets/ff5bdebe-ae2c-4dd6-9a30-a4dcac8db26c" /><br/>
+      <b>Giao diện đăng ký</b>
+    </td>
+    <td align="center">
+      <img width="50%" alt="Screenshot 2025-09-19 055121" src="https://github.com/user-attachments/assets/bb211255-4f03-4c02-8fdf-452f7bd302e8" /><br/>
+      <b>Giao diện đăng nhập</b>
+    </td>
+  </tr>
+</table>
 
 </div>
 
