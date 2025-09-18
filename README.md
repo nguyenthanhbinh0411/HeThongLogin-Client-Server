@@ -83,5 +83,22 @@ Hệ thống quản lý đăng nhập người dùng cung cấp các chức năn
 </table>
 
 </div>
+<table>
+  <tr>
+    <td align="center">
+      <img width="50%" alt="Screenshot 2025-09-19 060423" src="https://github.com/user-attachments/assets/1789505a-e262-4e7f-a87e-50ba1141a3bf" />
+      <b>Giao diện User</b>
+    </td>
+    <td align="center">
+      <img width="50%" alt="Screenshot 2025-09-19 060705" src="https://github.com/user-attachments/assets/46fcfa65-4510-47d3-814a-2a2d63a0cdac" />
+      <b>Giao diện sửa thông tin của User</b>
+    </td>
+      <td align="center">
+      <img width="50%"alt="Screenshot 2025-09-19 060900" src="https://github.com/user-attachments/assets/9254a83d-c3c4-47cd-901f-108c89b07013" />
+      <b>Giao diện đổi mật khẩu của User</b>
+    </td>
+  </tr>
+</table>
 
+</div>
 
