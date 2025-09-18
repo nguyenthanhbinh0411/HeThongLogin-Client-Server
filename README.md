@@ -60,7 +60,8 @@ Hệ thống quản lý đăng nhập người dùng cung cấp các chức năn
 - Hỗ trợ đăng nhập, quản lý tài khoản, xem lịch sử truy cập
 - Quản trị viên có thể thao tác trực tiếp trên bảng người dùng
 - Ảnh minh họa giao diện:
-
+<img width="443" height="498" alt="Screenshot 2025-09-19 055603" src="https://github.com/user-attachments/assets/ff5bdebe-ae2c-4dd6-9a30-a4dcac8db26c" />
+giao diện đăng ký
 <img width="763" height="572" alt="Screenshot 2025-09-19 055121" src="https://github.com/user-attachments/assets/bb211255-4f03-4c02-8fdf-452f7bd302e8" />
 giao diện đăng nhập
 
