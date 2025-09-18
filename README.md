@@ -21,4 +21,37 @@
 
 </div>
 
+
+---
+
+## 1. Giới thiệu hệ thống
+
+Đề tài xây dựng **hệ thống đăng nhập Client - Server** bằng **Java Swing** với giao thức **TCP**, lưu trữ dữ liệu người dùng trong **MySQL Database**.  
+Hệ thống có 2 phân quyền chính:  
+- **User**: Đăng nhập để xem thông tin cá nhân.  
+- **Admin**: Quản lý tài khoản người dùng (xem danh sách, thêm, sửa, xóa, khóa tài khoản, hiển thị mật khẩu, phân quyền).
+
+### Các chức năng chính:
+- Đăng ký, đăng nhập, đăng xuất người dùng.
+- Quản lý tài khoản người dùng (Admin).  
+- Mã hóa và giải mã mật khẩu (Admin có thể nhấn nút hiển thị để xem mật khẩu).  
+- Giao tiếp Client - Server qua TCP socket.  
+- Lưu trữ thông tin tài khoản trong cơ sở dữ liệu MySQL.  
+
+### Mục tiêu hệ thống:
+- Giúp sinh viên làm quen với **Java Swing, TCP Socket, MySQL**.  
+- Mô phỏng hệ thống đăng nhập thực tế có quản trị viên và người dùng.  
+- Thể hiện đầy đủ quy trình **Client - Server** trong một ứng dụng desktop.
+
+---
+
+## 2. Các công nghệ được sử dụng
+
+- **Ngôn ngữ:** Java  
+- **Giao diện:** Java Swing  
+- **Giao thức mạng:** TCP Socket  
+- **Lưu trữ:** MySQL Database  
+- **Môi trường phát triển:** Eclipse IDE  
+- **Hệ điều hành:** Windows  
+
 ---
