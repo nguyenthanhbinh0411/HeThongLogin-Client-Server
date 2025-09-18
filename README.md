@@ -9,9 +9,9 @@
 
 <div align="center">
     <p align="center">
-        <img src="docs/aiotlab_logo.png" alt="AIoTLab Logo" width="170"/>
-        <img src="docs/fitdnu_logo.png" alt="FIT DNU Logo" width="180"/>
-        <img src="docs/dnu_logo.png" alt="DaiNam University Logo" width="200"/>
+        <img width="1508" height="1687" alt="aiotlab_logo" src="https://github.com/user-attachments/assets/d160de9e-7aa4-47f0-9a65-c6275a736d58" width="170" />
+        <img width="3693" height="3693" alt="fitdnu_logo" src="https://github.com/user-attachments/assets/f40bd9aa-d77b-434a-91aa-7e83e41b90ff" width="180"/>
+        <img width="1128" height="1024" alt="dnu_logo" src="https://github.com/user-attachments/assets/4e6392f6-664e-46d8-b411-5d58b257d721" width="200"/>
     </p>
 
 
