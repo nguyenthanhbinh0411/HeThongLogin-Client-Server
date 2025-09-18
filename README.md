@@ -69,12 +69,12 @@ Hệ thống quản lý đăng nhập người dùng cung cấp các chức năn
 
 <div align="center" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
 
-  <div style="text-align: center; width: 45%;">
+  <div style="text-align: center; width: 30%;">
     <img src="https://github.com/user-attachments/assets/ff5bdebe-ae2c-4dd6-9a30-a4dcac8db26c" alt="Screenshot đăng ký" width="50%" />
     <p><i>Giao diện đăng ký</i></p>
   </div>
 
-  <div style="text-align: center; width: 45%;">
+  <div style="text-align: center; width: 30%;">
     <img src="https://github.com/user-attachments/assets/bb211255-4f03-4c02-8fdf-452f7bd302e8" alt="Screenshot đăng nhập" width="50%" />
     <p><i>Giao diện đăng nhập</i></p>
   </div>
