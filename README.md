@@ -54,3 +54,13 @@ Hệ thống quản lý đăng nhập người dùng cung cấp các chức năn
 - **Môi trường phát triển:** Eclipse IDE
 - **Hệ điều hành:** Windows
 
+## 3. Giao diện
+
+- Giao diện hiện đại, sử dụng màu sắc và font chữ thân thiện
+- Hỗ trợ đăng nhập, quản lý tài khoản, xem lịch sử truy cập
+- Quản trị viên có thể thao tác trực tiếp trên bảng người dùng
+- Ảnh minh họa giao diện:
+
+<img width="763" height="572" alt="Screenshot 2025-09-19 055121" src="https://github.com/user-attachments/assets/bb211255-4f03-4c02-8fdf-452f7bd302e8" />
+giao diện đăng nhập
+
