@@ -66,11 +66,11 @@ Hệ thống quản lý đăng nhập người dùng cung cấp các chức năn
 <table>
   <tr>
     <td align="center">
-      <img width="443" height="498" alt="Screenshot 2025-09-19 055603" src="https://github.com/user-attachments/assets/ff5bdebe-ae2c-4dd6-9a30-a4dcac8db26c" /><br/>
+      <img width="50%" alt="Screenshot 2025-09-19 055603" src="https://github.com/user-attachments/assets/ff5bdebe-ae2c-4dd6-9a30-a4dcac8db26c" /><br/>
       <b>Giao diện đăng ký</b>
     </td>
     <td align="center">
-      <img width="763" height="572" alt="Screenshot 2025-09-19 055121" src="https://github.com/user-attachments/assets/bb211255-4f03-4c02-8fdf-452f7bd302e8" /><br/>
+      <img width="50%" alt="Screenshot 2025-09-19 055121" src="https://github.com/user-attachments/assets/bb211255-4f03-4c02-8fdf-452f7bd302e8" /><br/>
       <b>Giao diện đăng nhập</b>
     </td>
   </tr>
@@ -85,11 +85,11 @@ Hệ thống quản lý đăng nhập người dùng cung cấp các chức năn
       <b>Giao diện User</b>
     </td>
     <td align="center">
-      <img width="80%" alt="Screenshot 2025-09-19 060705" src="https://github.com/user-attachments/assets/46fcfa65-4510-47d3-814a-2a2d63a0cdac" /><br/>
+      <img width="90%" alt="Screenshot 2025-09-19 060705" src="https://github.com/user-attachments/assets/46fcfa65-4510-47d3-814a-2a2d63a0cdac" /><br/>
       <b>Giao diện sửa thông tin của User</b>
     </td>
       <td align="center">
-      <img width="80%"alt="Screenshot 2025-09-19 060900" src="https://github.com/user-attachments/assets/9254a83d-c3c4-47cd-901f-108c89b07013" /><br/>
+      <img width="90%"alt="Screenshot 2025-09-19 060900" src="https://github.com/user-attachments/assets/9254a83d-c3c4-47cd-901f-108c89b07013" /><br/>
       <b>Giao diện đổi mật khẩu của User</b>
     </td>
   </tr>
