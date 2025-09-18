@@ -26,32 +26,31 @@
 
 ## 1. Giới thiệu hệ thống
 
-Đề tài xây dựng **hệ thống đăng nhập Client - Server** bằng **Java Swing** với giao thức **TCP**, lưu trữ dữ liệu người dùng trong **MySQL Database**.  
-Hệ thống có 2 phân quyền chính:  
-- **User**: Đăng nhập để xem thông tin cá nhân.  
-- **Admin**: Quản lý tài khoản người dùng (xem danh sách, thêm, sửa, xóa, khóa tài khoản, hiển thị mật khẩu, phân quyền).
+Hệ thống quản lý đăng nhập người dùng cung cấp các chức năng đăng nhập, quản lý tài khoản, phân quyền, ghi nhận lịch sử truy cập và bảo mật tài khoản. Mục tiêu của hệ thống là xây dựng một giải pháp quản lý người dùng an toàn, dễ sử dụng, phù hợp với các ứng dụng doanh nghiệp vừa và nhỏ.
 
-### Các chức năng chính:
-- Đăng ký, đăng nhập, đăng xuất người dùng.
-- Quản lý tài khoản người dùng (Admin).  
-- Mã hóa và giải mã mật khẩu (Admin có thể nhấn nút hiển thị để xem mật khẩu).  
-- Giao tiếp Client - Server qua TCP socket.  
-- Lưu trữ thông tin tài khoản trong cơ sở dữ liệu MySQL.  
+### Các chức năng chính
 
-### Mục tiêu hệ thống:
-- Giúp sinh viên làm quen với **Java Swing, TCP Socket, MySQL**.  
-- Mô phỏng hệ thống đăng nhập thực tế có quản trị viên và người dùng.  
-- Thể hiện đầy đủ quy trình **Client - Server** trong một ứng dụng desktop.
+- Đăng nhập, đăng xuất
+- Quản lý tài khoản người dùng (tạo, sửa, khóa/mở khóa,)
+- User có thể thay đổi thông tin cá nhân và thay đổi mật khẩu
+- Phân quyền người dùng (ADMIN/USER)
+- Ghi nhận lịch sử đăng nhập, hành động
+- Bảo vệ tài khoản với chính sách khóa khi đăng nhập sai nhiều lần
+- Quản lý trạng thái online/offline
 
----
+### Mục tiêu hệ thống
+
+- Đảm bảo an toàn thông tin người dùng
+- Quản lý tập trung, dễ dàng mở rộng
+- Giao diện thân thiện, hiện đại
+- Hỗ trợ kiểm tra, giám sát hoạt động truy cập
 
 ## 2. Các công nghệ được sử dụng
 
-- **Ngôn ngữ:** Java  
-- **Giao diện:** Java Swing  
-- **Giao thức mạng:** TCP Socket  
-- **Lưu trữ:** MySQL Database  
-- **Môi trường phát triển:** Eclipse IDE  
-- **Hệ điều hành:** Windows  
+- **Ngôn ngữ:** Java
+- **Giao diện:** Java Swing
+- **Giao thức mạng:** TCP Socket
+- **Lưu trữ:** MySQL Database
+- **Môi trường phát triển:** Eclipse IDE
+- **Hệ điều hành:** Windows
 
----
