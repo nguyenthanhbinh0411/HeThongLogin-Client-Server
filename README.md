@@ -84,7 +84,7 @@ Hệ thống quản lý đăng nhập người dùng cung cấp các chức năn
       <b>Giao diện đăng ký</b>
     </td>
         <td align="center">
-      <img width="80%" alt="Screenshot 2025-09-19 060423" src="https://github.com/user-attachments/assets/1789505a-e262-4e7f-a87e-50ba1141a3bf" /><br/>
+      <img width="70%" alt="Screenshot 2025-09-19 060423" src="https://github.com/user-attachments/assets/1789505a-e262-4e7f-a87e-50ba1141a3bf" /><br/>
       <b>Giao diện User</b>
     </td>
   </tr>
