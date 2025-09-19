@@ -111,8 +111,8 @@ Hệ thống quản lý đăng nhập người dùng cung cấp các chức năn
 <table>
   <tr>
       <td align="center">
-      <img width="80%" alt="Screenshot 2025-09-19 072228" src="https://github.com/user-attachments/assets/9b5d12c1-dacc-47b0-bc1c-98bd3590d3db" /><br/>
-      <b>Giao diện quản lý của Admin</b>
+      <img width="100%" alt="Screenshot 2025-09-19 072228" src="https://github.com/user-attachments/assets/9b5d12c1-dacc-47b0-bc1c-98bd3590d3db" /><br/>
+      <b>Giao diện thêm người dùng của Admin</b>
     </td>
        <td align="center">
       <img width="60%" alt="Screenshot 2025-09-19 072421" src="https://github.com/user-attachments/assets/204fd50c-1998-4041-8aae-29c0122930bb" /><br/>
