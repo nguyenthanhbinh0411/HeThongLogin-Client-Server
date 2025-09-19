@@ -80,7 +80,7 @@ Hệ thống quản lý đăng nhập người dùng cung cấp các chức năn
 <table>
   <tr>
     <td align="center">
-      <img width="80%" alt="Screenshot 2025-09-19 055603" src="https://github.com/user-attachments/assets/ff5bdebe-ae2c-4dd6-9a30-a4dcac8db26c" /><br/>
+      <img width="110%" alt="Screenshot 2025-09-19 055603" src="https://github.com/user-attachments/assets/ff5bdebe-ae2c-4dd6-9a30-a4dcac8db26c" /><br/>
       <b>Giao diện đăng ký</b>
     </td>
         <td align="center">
