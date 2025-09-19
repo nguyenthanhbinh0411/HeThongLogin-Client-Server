@@ -1,10 +1,12 @@
 <h2 align="center">
-    <a href="https://dainam.edu.vn/vi/khoa-cong-nghe-thong-tin">
-    �  FACULTY OF INFORMATION TECHNOLOGY (DAINAM UNIVERSITY)
-    </a>
+
+<h2 align="center">
+  <a href="https://dainam.edu.vn/vi/khoa-cong-nghe-thong-tin">
+  🎓  FACULTY OF INFORMATION TECHNOLOGY (DAINAM UNIVERSITY)
+  </a>
 </h2>
 <h2 align="center">
-    HỆ THỐNG ĐĂNG NHẬP CLIENT-SERVER
+  🔐 HỆ THỐNG ĐĂNG NHẬP CLIENT-SERVER
 </h2>
 
 <div align="center">
@@ -14,21 +16,19 @@
         <img alt="dnu_logo" src="https://github.com/user-attachments/assets/4e6392f6-664e-46d8-b411-5d58b257d721" width="200"/>
     </p>
 
-
 [![AIoTLab](https://img.shields.io/badge/AIoTLab-green?style=for-the-badge)](https://www.facebook.com/DNUAIoTLab)
 [![Faculty of Information Technology](https://img.shields.io/badge/Faculty%20of%20Information%20Technology-blue?style=for-the-badge)](https://dainam.edu.vn/vi/khoa-cong-nghe-thong-tin)
 [![DaiNam University](https://img.shields.io/badge/DaiNam%20University-orange?style=for-the-badge)](https://dainam.edu.vn)
 
 </div>
 
-
 ---
 
-## 1. Giới thiệu hệ thống
+## 1. Giới thiệu hệ thống 📋
 
 Hệ thống quản lý đăng nhập người dùng cung cấp các chức năng đăng nhập, quản lý tài khoản, phân quyền, ghi nhận lịch sử truy cập và bảo mật tài khoản. Mục tiêu của hệ thống là xây dựng một giải pháp quản lý người dùng an toàn, dễ sử dụng, phù hợp với các ứng dụng doanh nghiệp vừa và nhỏ.
 
-### Các chức năng chính
+### Các chức năng chính ⚡
 
 - Đăng nhập, đăng xuất
 - Quản lý tài khoản người dùng (tạo, sửa, khóa/mở khóa,)
@@ -38,14 +38,14 @@ Hệ thống quản lý đăng nhập người dùng cung cấp các chức năn
 - Bảo vệ tài khoản với chính sách khóa khi đăng nhập sai nhiều lần
 - Quản lý trạng thái online/offline
 
-### Mục tiêu hệ thống
+### Mục tiêu hệ thống 🎯
 
 - Đảm bảo an toàn thông tin người dùng
 - Quản lý tập trung, dễ dàng mở rộng
 - Giao diện thân thiện, hiện đại
 - Hỗ trợ kiểm tra, giám sát hoạt động truy cập
 
-## 2. Các công nghệ được sử dụng
+## 2. Các công nghệ được sử dụng 🛠️
 
 - **Ngôn ngữ:** Java
 - **Giao diện:** Java Swing
@@ -54,12 +54,12 @@ Hệ thống quản lý đăng nhập người dùng cung cấp các chức năn
 - **Môi trường phát triển:** Eclipse IDE
 - **Hệ điều hành:** Windows
 
-## 3. Giao diện
+## 3. Giao diện 🖥️
 
-- Giao diện hiện đại, sử dụng màu sắc và font chữ thân thiện  
-- Hỗ trợ đăng nhập, quản lý tài khoản, xem lịch sử truy cập  
-- Quản trị viên có thể thao tác trực tiếp trên bảng người dùng  
-- Ảnh minh họa giao diện:  
+- Giao diện hiện đại, sử dụng màu sắc và font chữ thân thiện
+- Hỗ trợ đăng nhập, quản lý tài khoản, xem lịch sử truy cập
+- Quản trị viên có thể thao tác trực tiếp trên bảng người dùng
+- Ảnh minh họa giao diện:
 
 <div align="center">
 
@@ -127,16 +127,16 @@ Hệ thống quản lý đăng nhập người dùng cung cấp các chức năn
 
 </div>
 
-## 4. Các bước cài đặt & sử dụng
+## 4. Các bước cài đặt & sử dụng 🚀
 
-### 4.1. Chuẩn bị môi trường
+### 4.1. Chuẩn bị môi trường 🏗️
 
 - **Cài đặt JDK**: Phiên bản 11 hoặc cao hơn (khuyến nghị JDK 17).
 - **Cài đặt Eclipse IDE**: Dùng để import và build project.
 - **Cài đặt MySQL Server**: Phiên bản 5.7 hoặc 8.x.
 - **Tạo cơ sở dữ liệu**: Dùng MySQL Workbench hoặc dòng lệnh.
 
-### 4.2. Tạo cơ sở dữ liệu
+### 4.2. Tạo cơ sở dữ liệu 🗄️
 
 Chạy các câu lệnh SQL sau để tạo database và các bảng cần thiết:
 
@@ -185,7 +185,7 @@ CREATE TABLE audit_logs (
 
 📌 Sau khi chạy xong, bạn sẽ có đầy đủ cấu trúc database để hệ thống hoạt động.
 
-### 4.3. Cấu hình kết nối CSDL
+### 4.3. Cấu hình kết nối CSDL 🔗
 
 Mở file `com.myapp.server.MySQLDatabase.java` và chỉnh sửa thông tin kết nối:
 
@@ -195,18 +195,18 @@ private static final String DB_USER = "root";       // thay bằng user MySQL c�
 private static final String DB_PASSWORD = "123456"; // thay bằng password của bạn
 ```
 
-### 4.4. Biên dịch và chạy dự án
+### 4.4. Biên dịch và chạy dự án ⚙️
 
 Mở Eclipse IDE → File > Import > Existing Projects into Workspace.
 Chọn thư mục project (LoginSystem).
 Chuột phải project → Build Project.
 
-### 4.5. Khởi chạy hệ thống
+### 4.5. Khởi chạy hệ thống ▶️
 
 Khởi động Server: chạy file `ServerMain.java` (ở package `com.myapp.server`).
 Khởi động Client: chạy file `ClientMain.java` (ở package `com.myapp.client`).
 
-### 4.6. Đăng nhập & sử dụng
+### 4.6. Đăng nhập & sử dụng 👤
 
 Tài khoản mặc định:
 
@@ -226,7 +226,7 @@ Admin có thể:
 - Xem nhật ký hoạt động (audit logs).
 - Lọc và tìm kiếm danh sách tài khoản.
 
-## 5. Liên hệ
+## 5. Liên hệ 📞
 
 - **Họ tên:** Nguyễn Thanh Bình
 - **Email:** nguyenbinh041104@gmail.com
