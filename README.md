@@ -110,14 +110,16 @@ Hệ thống quản lý đăng nhập người dùng cung cấp các chức năn
 </div>
 <table>
   <tr>
-      <td align="center">
-      <img width="100%" alt="Screenshot 2025-09-19 072228" src="https://github.com/user-attachments/assets/9b5d12c1-dacc-47b0-bc1c-98bd3590d3db" /><br/>
-      <b>Giao diện thêm người dùng của Admin</b>
-    </td>
        <td align="center">
       <img width="60%" alt="Screenshot 2025-09-19 072421" src="https://github.com/user-attachments/assets/204fd50c-1998-4041-8aae-29c0122930bb" /><br/>
       <b>Giao diện khóa/ mở khóa tài khoản</b>
-    </td>
+  </tr>
+</table>
+
+</div>
+</div>
+<table>
+  <tr>
        <td align="center">
       <img width="80%"alt="Screenshot 2025-09-19 072628" src="https://github.com/user-attachments/assets/1458fbc2-a596-41d4-9162-91983ced8b38" /><br/>
       <b>Giao diện lịch sử tài khoản</b>
@@ -126,6 +128,20 @@ Hệ thống quản lý đăng nhập người dùng cung cấp các chức năn
 </table>
 
 </div>
+
+</div>
+<table>
+  <tr>
+      <td align="center">
+      <img width="100%" alt="Screenshot 2025-09-19 072228" src="https://github.com/user-attachments/assets/9b5d12c1-dacc-47b0-bc1c-98bd3590d3db" /><br/>
+      <b>Giao diện thêm người dùng của Admin</b>
+    </td>
+  </tr>
+</table>
+
+</div>
+
+
 
 ## 4. Các bước cài đặt & sử dụng 🚀
 
