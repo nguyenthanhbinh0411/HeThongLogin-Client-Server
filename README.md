@@ -61,16 +61,13 @@ Hệ thống quản lý đăng nhập người dùng cung cấp các chức năn
 - Quản trị viên có thể thao tác trực tiếp trên bảng người dùng
 - Ảnh minh họa giao diện:
 
-<div align="center">
+    
 
+<div align="center">
 <table>
   <tr>
-    <td align="center">
-      <img width="50%" alt="Screenshot 2025-09-19 055603" src="https://github.com/user-attachments/assets/ff5bdebe-ae2c-4dd6-9a30-a4dcac8db26c" /><br/>
-      <b>Giao diện đăng ký</b>
-    </td>
-    <td align="center">
-      <img width="50%" alt="Screenshot 2025-09-19 055121" src="https://github.com/user-attachments/assets/bb211255-4f03-4c02-8fdf-452f7bd302e8" /><br/>
+      <td align="center">
+      <img width="100%" alt="Screenshot 2025-09-19 055121" src="https://github.com/user-attachments/assets/bb211255-4f03-4c02-8fdf-452f7bd302e8" /><br/>
       <b>Giao diện đăng nhập</b>
     </td>
   </tr>
@@ -78,12 +75,25 @@ Hệ thống quản lý đăng nhập người dùng cung cấp các chức năn
 
 </div>
 
+<div align="center">
+
 <table>
   <tr>
     <td align="center">
-      <img width="50%" alt="Screenshot 2025-09-19 060423" src="https://github.com/user-attachments/assets/1789505a-e262-4e7f-a87e-50ba1141a3bf" /><br/>
+      <img width="80%" alt="Screenshot 2025-09-19 055603" src="https://github.com/user-attachments/assets/ff5bdebe-ae2c-4dd6-9a30-a4dcac8db26c" /><br/>
+      <b>Giao diện đăng ký</b>
+    </td>
+        <td align="center">
+      <img width="80%" alt="Screenshot 2025-09-19 060423" src="https://github.com/user-attachments/assets/1789505a-e262-4e7f-a87e-50ba1141a3bf" /><br/>
       <b>Giao diện User</b>
     </td>
+  </tr>
+</table>
+
+</div>
+<div >
+<table>
+  <tr>
     <td align="center">
       <img width="90%" alt="Screenshot 2025-09-19 060705" src="https://github.com/user-attachments/assets/46fcfa65-4510-47d3-814a-2a2d63a0cdac" /><br/>
       <b>Giao diện sửa thông tin của User</b>
@@ -95,11 +105,11 @@ Hệ thống quản lý đăng nhập người dùng cung cấp các chức năn
   </tr>
 </table>
 
-</div>
+<div align="center">
 <table>
   <tr>
       <td align="center">
-      <img width="80%" alt="Screenshot 2025-09-19 061113" src="https://github.com/user-attachments/assets/537203c7-8b17-48be-9038-8ae175035a27" /><br/>
+      <img width="100%" alt="Screenshot 2025-09-19 061113" src="https://github.com/user-attachments/assets/537203c7-8b17-48be-9038-8ae175035a27" /><br/>
       <b>Giao diện quản lý của Admin</b>
     </td>
   </tr>
@@ -107,7 +117,7 @@ Hệ thống quản lý đăng nhập người dùng cung cấp các chức năn
 
 </div>
 
-</div>
+<div align="center">
 <table>
   <tr>
        <td align="center">
@@ -117,7 +127,7 @@ Hệ thống quản lý đăng nhập người dùng cung cấp các chức năn
 </table>
 
 </div>
-</div>
+<div align="center">
 <table>
   <tr>
        <td align="center">
@@ -129,7 +139,7 @@ Hệ thống quản lý đăng nhập người dùng cung cấp các chức năn
 
 </div>
 
-</div>
+<div align="center">
 <table>
   <tr>
       <td align="center">
