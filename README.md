@@ -127,3 +127,107 @@ Hệ thống quản lý đăng nhập người dùng cung cấp các chức năn
 
 </div>
 
+## 4. Các bước cài đặt & sử dụng
+
+### 4.1. Chuẩn bị môi trường
+
+- **Cài đặt JDK**: Phiên bản 11 hoặc cao hơn (khuyến nghị JDK 17).
+- **Cài đặt Eclipse IDE**: Dùng để import và build project.
+- **Cài đặt MySQL Server**: Phiên bản 5.7 hoặc 8.x.
+- **Tạo cơ sở dữ liệu**: Dùng MySQL Workbench hoặc dòng lệnh.
+
+### 4.2. Tạo cơ sở dữ liệu
+
+Chạy các câu lệnh SQL sau để tạo database và các bảng cần thiết:
+
+```sql
+-- Tạo database
+CREATE DATABASE IF NOT EXISTS user_management CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+-- Sử dụng database
+USE user_management;
+
+-- Tạo bảng users
+CREATE TABLE users (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  username VARCHAR(50) NOT NULL UNIQUE,
+  password_hash VARCHAR(255) NOT NULL,
+  full_name VARCHAR(150),
+  email VARCHAR(150),
+  role ENUM('USER','ADMIN') DEFAULT 'USER',
+  status ENUM('ACTIVE','LOCKED','INACTIVE') DEFAULT 'ACTIVE',
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  last_login TIMESTAMP NULL
+);
+
+-- Tạo bảng login_attempts
+CREATE TABLE login_attempts (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  user_id INT,
+  username VARCHAR(50),
+  attempt_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  success BOOLEAN,
+  ip VARCHAR(45),
+  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE SET NULL
+);
+
+-- Tạo bảng audit_logs
+CREATE TABLE audit_logs (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  user_id INT,
+  action VARCHAR(100),
+  details TEXT,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE SET NULL
+);
+```
+
+📌 Sau khi chạy xong, bạn sẽ có đầy đủ cấu trúc database để hệ thống hoạt động.
+
+### 4.3. Cấu hình kết nối CSDL
+
+Mở file `com.myapp.server.MySQLDatabase.java` và chỉnh sửa thông tin kết nối:
+
+```java
+private static final String DB_URL = "jdbc:mysql://localhost:3306/user_management";
+private static final String DB_USER = "root";       // thay bằng user MySQL của bạn
+private static final String DB_PASSWORD = "123456"; // thay bằng password của bạn
+```
+
+### 4.4. Biên dịch và chạy dự án
+
+Mở Eclipse IDE → File > Import > Existing Projects into Workspace.
+Chọn thư mục project (LoginSystem).
+Chuột phải project → Build Project.
+
+### 4.5. Khởi chạy hệ thống
+
+Khởi động Server: chạy file `ServerMain.java` (ở package `com.myapp.server`).
+Khởi động Client: chạy file `ClientMain.java` (ở package `com.myapp.client`).
+
+### 4.6. Đăng nhập & sử dụng
+
+Tài khoản mặc định:
+
+- Username: `admin`
+- Password: `admin123`
+
+User có thể:
+
+- Đăng nhập để xem thông tin cá nhân.
+- Sửa thông tin cá nhân.
+- Đổi mật khẩu.
+
+Admin có thể:
+
+- Quản lý tài khoản người dùng (thêm, sửa, khóa/mở khóa).
+- Phân quyền (USER / ADMIN).
+- Xem nhật ký hoạt động (audit logs).
+- Lọc và tìm kiếm danh sách tài khoản.
+
+## 5. Liên hệ
+
+- **Họ tên:** Nguyễn Thanh Bình
+- **Email:** nguyenbinh041104@gmail.com
+- **SĐT:** 0839705780
