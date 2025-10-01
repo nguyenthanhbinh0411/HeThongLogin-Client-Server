@@ -68,24 +68,23 @@ Hệ thống quản lý đăng nhập người dùng cung cấp các chức năn
 <table>
   <tr>
       <td align="center">
-      <img width="100%"alt="Screenshot 2025-09-19 080953" src="https://github.com/user-attachments/assets/2f1f58c5-6bdc-4fc5-8731-f23a270a01e2" /><br/>
+      <img width="100%"alt="Screenshot 2025-09-19 080953" src="https://github.com/user-attachments/assets/a03f8040-fb33-41c8-a9ac-220be86ff27f" /><br/>
       <b>Giao diện đăng nhập</b>
+    </td>
+    <td align="center">
+      <img width="110%" alt="Screenshot 2025-09-19 055603" src="https://github.com/user-attachments/assets/a027d328-7635-4db6-80b8-a28494f19349" /><br/>
+      <b>Giao diện đăng ký</b>
     </td>
   </tr>
 </table>
-
 </div>
 
 <div align="center">
 
 <table>
   <tr>
-    <td align="center">
-      <img width="110%" alt="Screenshot 2025-09-19 055603" src="https://github.com/user-attachments/assets/ff5bdebe-ae2c-4dd6-9a30-a4dcac8db26c" /><br/>
-      <b>Giao diện đăng ký</b>
-    </td>
         <td align="center">
-      <img width="70%" alt="Screenshot 2025-09-19 060423" src="https://github.com/user-attachments/assets/1789505a-e262-4e7f-a87e-50ba1141a3bf" /><br/>
+      <img width="100%" alt="Screenshot 2025-09-19 060423" src="https://github.com/user-attachments/assets/22143a1a-c166-4e90-b0df-968b67a1092b" /><br/>
       <b>Giao diện User</b>
     </td>
   </tr>
@@ -96,11 +95,11 @@ Hệ thống quản lý đăng nhập người dùng cung cấp các chức năn
 <table>
   <tr>
     <td align="center">
-      <img width="90%" alt="Screenshot 2025-09-19 060705" src="https://github.com/user-attachments/assets/46fcfa65-4510-47d3-814a-2a2d63a0cdac" /><br/>
+      <img width="110%" alt="Screenshot 2025-09-19 060705" src="https://github.com/user-attachments/assets/08d9080c-504a-41fb-aa31-14371af7ca83" /><br/>
       <b>Giao diện sửa thông tin của User</b>
     </td>
       <td align="center">
-      <img width="90%"alt="Screenshot 2025-09-19 060900" src="https://github.com/user-attachments/assets/9254a83d-c3c4-47cd-901f-108c89b07013" /><br/>
+      <img width="120%"alt="Screenshot 2025-09-19 060900" src="https://github.com/user-attachments/assets/207f9401-6f0b-4be3-96f8-58659c79acda" /><br/>
       <b>Giao diện đổi mật khẩu của User</b>
     </td>
   </tr>
@@ -110,7 +109,18 @@ Hệ thống quản lý đăng nhập người dùng cung cấp các chức năn
 <table>
   <tr>
       <td align="center">
-      <img width="100%" alt="Screenshot 2025-09-19 061113" src="https://github.com/user-attachments/assets/537203c7-8b17-48be-9038-8ae175035a27" /><br/>
+      <img width="100%" alt="Screenshot 2025-09-19 061113" src="https://github.com/user-attachments/assets/091b422b-1440-4419-8f2b-0af267c151e0" /><br/>
+      <b>Giao diện lịch sử hoạt động của User</b>
+    </td>
+  </tr>
+</table>
+</div>
+
+<div align="center">
+<table>
+  <tr>
+      <td align="center">
+      <img width="100%" alt="Screenshot 2025-09-19 061113" src="https://github.com/user-attachments/assets/6fc22873-d55d-41b6-8bb2-a6e82d000be5" /><br/>
       <b>Giao diện quản lý của Admin</b>
     </td>
   </tr>
@@ -122,18 +132,31 @@ Hệ thống quản lý đăng nhập người dùng cung cấp các chức năn
 <table>
   <tr>
        <td align="center">
-      <img width="100%" alt="Screenshot 2025-09-19 072421" src="https://github.com/user-attachments/assets/204fd50c-1998-4041-8aae-29c0122930bb" /><br/>
-      <b>Giao diện khóa/ mở khóa tài khoản</b>
+      <img width="100%" alt="Screenshot 2025-09-19 072421" src="https://github.com/user-attachments/assets/196df819-d567-46d9-8565-32668403caf6" /><br/>
+      <b>Giao diện danh sách người dùng</b>
+        </td>
   </tr>
 </table>
-
 </div>
+
 <div align="center">
 <table>
   <tr>
        <td align="center">
-      <img width="100%"alt="Screenshot 2025-09-19 072628" src="https://github.com/user-attachments/assets/1458fbc2-a596-41d4-9162-91983ced8b38" /><br/>
-      <b>Giao diện lịch sử tài khoản</b>
+      <img width="100%" alt="Screenshot 2025-09-19 072421" src="https://github.com/user-attachments/assets/a47063ac-c08b-42f4-8378-372d67e1570e" /><br/>
+      <b>Giao diện lịch sử hoạt động</b>
+        </td>
+  </tr>
+</table>
+</div>
+
+
+<div align="center">
+<table>
+  <tr>
+       <td align="center">
+      <img width="100%"alt="Screenshot 2025-09-19 072628" src="https://github.com/user-attachments/assets/82acf822-028a-4546-bd9c-d5f300c8f5be" /><br/>
+      <b>Giao diện cập nhật thông tin tài khoản</b>
     </td>
   </tr>
 </table>
@@ -144,12 +167,35 @@ Hệ thống quản lý đăng nhập người dùng cung cấp các chức năn
 <table>
   <tr>
       <td align="center">
-      <img width="100%" alt="Screenshot 2025-09-19 072228" src="https://github.com/user-attachments/assets/9b5d12c1-dacc-47b0-bc1c-98bd3590d3db" /><br/>
-      <b>Giao diện thêm người dùng của Admin</b>
+      <img width="100%" alt="Screenshot 2025-09-19 072228" src="https://github.com/user-attachments/assets/c7edb271-6155-4563-b9d1-ac07ff9a845a" /><br/>
+      <b>Giao diện cập nhật thông tin của Admin</b>
     </td>
   </tr>
 </table>
 
+</div>
+
+<div align="center">
+<table>
+  <tr>
+      <td align="center">
+      <img width="100%" alt="Screenshot 2025-09-19 072228" src="https://github.com/user-attachments/assets/3e776898-5bee-4b0f-9f1f-699d55cd29db" /><br/>
+      <b>Giao diện tạo tài khoản của Admin</b>
+    </td>
+  </tr>
+</table>
+
+</div>
+
+<div align="center">
+<table>
+  <tr>
+      <td align="center">
+      <img width="100%" alt="Screenshot 2025-09-19 072228" src="https://github.com/user-attachments/assets/605d4825-0b1b-4769-b0bf-59b2e8252ad2" /><br/>
+      <b>Giao diện lịch sử hoạt động của hệ thống</b>
+    </td>
+  </tr>
+</table>
 </div>
 
 ## 4. Các bước cài đặt & sử dụng 🚀
@@ -243,15 +289,15 @@ User có thể:
 - Đăng nhập để xem thông tin cá nhân.
 - Sửa thông tin cá nhân.
 - Đổi mật khẩu.
+- Xem lịch sử hoạt động của tài khoản
 
 Admin có thể:
 
-- Quản lý tài khoản người dùng (thêm, sửa, khóa/mở khóa).
+- Quản lý tài khoản người dùng (thêm, sửa, khóa/mở khóa, reset password).
 - Phân quyền (USER / ADMIN).
 - Xem nhật ký hoạt động (audit logs).
 - Lọc và tìm kiếm danh sách tài khoản.
 - Xem thống kê và báo cáo hoạt động người dùng.
-- Kiểm tra trạng thái tài khoản chi tiết.
 - Kiểm tra trạng thái tài khoản (online/offline).
 
 ## 5. Liên hệ 📞
