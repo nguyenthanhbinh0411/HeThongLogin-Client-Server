@@ -31,12 +31,15 @@ Hệ thống quản lý đăng nhập người dùng cung cấp các chức năn
 ### Các chức năng chính ⚡
 
 - Đăng nhập, đăng xuất
-- Quản lý tài khoản người dùng (tạo, sửa, khóa/mở khóa,)
+- Quản lý tài khoản người dùng (tạo, sửa, khóa/mở khóa)
 - User có thể thay đổi thông tin cá nhân và thay đổi mật khẩu
 - Phân quyền người dùng (ADMIN/USER)
 - Ghi nhận lịch sử đăng nhập, hành động
 - Bảo vệ tài khoản với chính sách khóa khi đăng nhập sai nhiều lần
 - Quản lý trạng thái online/offline
+- Kiểm tra trạng thái tài khoản: Hiển thị trạng thái hoạt động của tài khoản (online/offline, bị khóa,...).
+- Thống kê và báo cáo: Hiển thị biểu đồ thống kê hoạt động người dùng.
+- Tìm kiếm nâng cao: Lọc và tìm kiếm tài khoản theo nhiều tiêu chí (tên, email, trạng thái,...).
 
 ### Mục tiêu hệ thống 🎯
 
@@ -60,8 +63,6 @@ Hệ thống quản lý đăng nhập người dùng cung cấp các chức năn
 - Hỗ trợ đăng nhập, quản lý tài khoản, xem lịch sử truy cập
 - Quản trị viên có thể thao tác trực tiếp trên bảng người dùng
 - Ảnh minh họa giao diện:
-
-    
 
 <div align="center">
 <table>
@@ -150,8 +151,6 @@ Hệ thống quản lý đăng nhập người dùng cung cấp các chức năn
 </table>
 
 </div>
-
-
 
 ## 4. Các bước cài đặt & sử dụng 🚀
 
@@ -251,6 +250,9 @@ Admin có thể:
 - Phân quyền (USER / ADMIN).
 - Xem nhật ký hoạt động (audit logs).
 - Lọc và tìm kiếm danh sách tài khoản.
+- Xem thống kê và báo cáo hoạt động người dùng.
+- Kiểm tra trạng thái tài khoản chi tiết.
+- Kiểm tra trạng thái tài khoản (online/offline).
 
 ## 5. Liên hệ 📞
 
