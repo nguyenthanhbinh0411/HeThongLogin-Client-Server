@@ -8,6 +8,7 @@ public class User implements Serializable {
     private String passwordHash;
     private String fullName;
     private String email;
+    private String avatar;  // Avatar path/URL
     private String role;    // USER / ADMIN
     private String status;  // ACTIVE / LOCKED
     private String createdAt;
@@ -51,6 +52,13 @@ public class User implements Serializable {
     }
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getAvatar() {
+        return avatar;
+    }
+    public void setAvatar(String avatar) {
+        this.avatar = avatar;
     }
 
     public String getRole() {
@@ -97,7 +105,7 @@ public class User implements Serializable {
 
     @Override
     public String toString() {
-        return id + "," + username + "," + fullName + "," + email + "," + role + "," + status
+        return id + "," + username + "," + fullName + "," + email + "," + avatar + "," + role + "," + status
                 + "," + createdAt + "," + updatedAt + "," + lastLogin;
     }
 }

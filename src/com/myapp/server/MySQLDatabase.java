@@ -55,6 +55,7 @@ public class MySQLDatabase {
                 user.setPasswordHash(rs.getString("password_hash"));
                 user.setFullName(rs.getString("full_name"));
                 user.setEmail(rs.getString("email"));
+                user.setAvatar(rs.getString("avatar"));
                 user.setRole(rs.getString("role"));
                 user.setStatus(rs.getString("status"));
                 
@@ -88,6 +89,7 @@ public class MySQLDatabase {
                     user.setPasswordHash(rs.getString("password_hash"));
                     user.setFullName(rs.getString("full_name"));
                     user.setEmail(rs.getString("email"));
+                    user.setAvatar(rs.getString("avatar"));
                     user.setRole(rs.getString("role"));
                     user.setStatus(rs.getString("status"));
                     
@@ -122,6 +124,7 @@ public class MySQLDatabase {
                     user.setPasswordHash(rs.getString("password_hash"));
                     user.setFullName(rs.getString("full_name"));
                     user.setEmail(rs.getString("email"));
+                    user.setAvatar(rs.getString("avatar"));
                     user.setRole(rs.getString("role"));
                     user.setStatus(rs.getString("status"));
                     
@@ -143,15 +146,16 @@ public class MySQLDatabase {
     }
     
     public synchronized User addUser(User user) throws SQLException {
-        String sql = "INSERT INTO users (username, password_hash, full_name, email, role, status) VALUES (?, ?, ?, ?, ?, ?)";
+        String sql = "INSERT INTO users (username, password_hash, full_name, email, avatar, role, status) VALUES (?, ?, ?, ?, ?, ?, ?)";
         
         try (PreparedStatement stmt = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {
             stmt.setString(1, user.getUsername());
             stmt.setString(2, user.getPasswordHash());
             stmt.setString(3, user.getFullName());
             stmt.setString(4, user.getEmail());
-            stmt.setString(5, user.getRole());
-            stmt.setString(6, user.getStatus() != null ? user.getStatus() : "ACTIVE");
+            stmt.setString(5, user.getAvatar());
+            stmt.setString(6, user.getRole());
+            stmt.setString(7, user.getStatus() != null ? user.getStatus() : "ACTIVE");
             
             int affectedRows = stmt.executeUpdate();
             if (affectedRows == 0) {
@@ -171,23 +175,24 @@ public class MySQLDatabase {
     }
     
     public synchronized void updateUser(User user) throws SQLException {
-        String sql = "UPDATE users SET username=?, password_hash=?, full_name=?, email=?, role=?, status=?, last_login=? WHERE id=?";
+        String sql = "UPDATE users SET username=?, password_hash=?, full_name=?, email=?, avatar=?, role=?, status=?, last_login=? WHERE id=?";
         
         try (PreparedStatement stmt = connection.prepareStatement(sql)) {
             stmt.setString(1, user.getUsername());
             stmt.setString(2, user.getPasswordHash());
             stmt.setString(3, user.getFullName());
             stmt.setString(4, user.getEmail());
-            stmt.setString(5, user.getRole());
-            stmt.setString(6, user.getStatus());
+            stmt.setString(5, user.getAvatar());
+            stmt.setString(6, user.getRole());
+            stmt.setString(7, user.getStatus());
             
             if (user.getLastLogin() != null) {
-                stmt.setTimestamp(7, Timestamp.valueOf(user.getLastLogin()));
+                stmt.setTimestamp(8, Timestamp.valueOf(user.getLastLogin()));
             } else {
-                stmt.setNull(7, Types.TIMESTAMP);
+                stmt.setNull(8, Types.TIMESTAMP);
             }
             
-            stmt.setInt(8, user.getId());
+            stmt.setInt(9, user.getId());
             
             int affectedRows = stmt.executeUpdate();
             if (affectedRows == 0) {
@@ -287,5 +292,74 @@ public class MySQLDatabase {
         }
         
         return audits;
+    }
+    
+    // Get login attempts by username for user history
+    public synchronized List<LoginAttempt> getLoginAttemptsByUsername(String username) throws SQLException {
+        List<LoginAttempt> attempts = new ArrayList<>();
+        String sql = "SELECT * FROM login_attempts WHERE username = ? ORDER BY attempt_time DESC LIMIT 50";
+        
+        try (PreparedStatement stmt = connection.prepareStatement(sql)) {
+            stmt.setString(1, username);
+            try (ResultSet rs = stmt.executeQuery()) {
+                while (rs.next()) {
+                    LoginAttempt attempt = new LoginAttempt();
+                    attempt.setId(rs.getInt("id"));
+                    attempt.setUserId(rs.getObject("user_id", Integer.class));
+                    attempt.setUsername(rs.getString("username"));
+                    attempt.setAttemptTime(rs.getString("attempt_time"));
+                    attempt.setSuccess(rs.getBoolean("success"));
+                    attempt.setIp(rs.getString("ip"));
+                    attempts.add(attempt);
+                }
+            }
+        }
+        
+        return attempts;
+    }
+    
+    // Get audit logs by user ID for user history
+    public synchronized List<AuditLog> getAuditLogsByUserId(int userId) throws SQLException {
+        List<AuditLog> audits = new ArrayList<>();
+    String sql = "SELECT * FROM audit_logs WHERE user_id = ? ORDER BY created_at DESC";
+        
+        try (PreparedStatement stmt = connection.prepareStatement(sql)) {
+            stmt.setInt(1, userId);
+            try (ResultSet rs = stmt.executeQuery()) {
+                while (rs.next()) {
+                    AuditLog audit = new AuditLog();
+                    audit.setId(rs.getInt("id"));
+                    audit.setUserId(rs.getInt("user_id"));
+                    audit.setAction(rs.getString("action"));
+                    audit.setDetails(rs.getString("details"));
+                    audit.setCreatedAt(rs.getString("created_at"));
+                    audits.add(audit);
+                }
+            }
+        }
+        
+        return audits;
+    }
+    
+    // Get all login attempts for admin dashboard
+    public synchronized List<LoginAttempt> getAllLoginAttempts() throws SQLException {
+        List<LoginAttempt> attempts = new ArrayList<>();
+        String sql = "SELECT * FROM login_attempts ORDER BY attempt_time DESC LIMIT 200";
+        
+        try (PreparedStatement stmt = connection.prepareStatement(sql);
+             ResultSet rs = stmt.executeQuery()) {
+            while (rs.next()) {
+                LoginAttempt attempt = new LoginAttempt();
+                attempt.setId(rs.getInt("id"));
+                attempt.setUserId(rs.getObject("user_id", Integer.class));
+                attempt.setUsername(rs.getString("username"));
+                attempt.setAttemptTime(rs.getString("attempt_time"));
+                attempt.setSuccess(rs.getBoolean("success"));
+                attempt.setIp(rs.getString("ip"));
+                attempts.add(attempt);
+            }
+        }
+        
+        return attempts;
     }
 }

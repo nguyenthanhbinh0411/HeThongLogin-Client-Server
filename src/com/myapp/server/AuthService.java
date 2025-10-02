@@ -97,7 +97,7 @@ public class AuthService {
         } catch (Exception e) { return ResponseWrapper.error(e.getMessage()); }
     }
 
-    public synchronized ResponseWrapper createUser(String username, String password, String fullName, String email, String role) {
+    public synchronized ResponseWrapper createUser(String username, String password, String fullName, String email, String avatar, String role) {
         try {
             if (db.findByUsername(username).isPresent()) return ResponseWrapper.error("Username existed");
             User u = new User();
@@ -105,6 +105,7 @@ public class AuthService {
             u.setPasswordHash(Utils.sha256(password));
             u.setFullName(fullName);
             u.setEmail(email);
+            u.setAvatar(avatar);
             u.setRole(role==null?"USER":role);
             u.setStatus("ACTIVE");
             db.addUser(u);
@@ -125,7 +126,7 @@ public class AuthService {
         } catch (Exception e) { return ResponseWrapper.error(e.getMessage()); }
     }
 
-    public synchronized ResponseWrapper editUser(int id, String fullName, String email, String role, String password) {
+    public synchronized ResponseWrapper editUser(int id, String fullName, String email, String avatar, String role, String password) {
         try {
             Optional<User> ou = db.findById(id);
             if (!ou.isPresent()) return ResponseWrapper.error("User not found");
@@ -137,6 +138,9 @@ public class AuthService {
             }
             if (email != null && !email.trim().isEmpty()) {
                 u.setEmail(email);
+            }
+            if (avatar != null) {
+                u.setAvatar(avatar.trim().isEmpty() ? null : avatar);
             }
             if (role != null && !role.trim().isEmpty()) {
                 u.setRole(role);
@@ -191,7 +195,7 @@ public class AuthService {
         }
     }
 
-    public synchronized ResponseWrapper updateProfile(int userId, String fullName, String email) {
+    public synchronized ResponseWrapper updateProfile(int userId, String fullName, String email, String avatar) {
         try {
             Optional<User> ou = db.findById(userId);
             if (!ou.isPresent()) {
@@ -201,10 +205,13 @@ public class AuthService {
             User user = ou.get();
             user.setFullName(fullName);
             user.setEmail(email);
+            if (avatar != null) {
+                user.setAvatar(avatar.trim().isEmpty() ? null : avatar);
+            }
             user.setUpdatedAt(Utils.now());
             db.updateUser(user);
             
-            db.addAudit(createAudit(userId, "UPDATE_PROFILE", "Profile updated: " + fullName + ", " + email));
+            db.addAudit(createAudit(userId, "UPDATE_PROFILE", "Profile updated: " + fullName + ", " + email + ", avatar: " + avatar));
             return ResponseWrapper.okWith("user", user);
         } catch (Exception e) { 
             return ResponseWrapper.error("Lỗi server: " + e.getMessage()); 
